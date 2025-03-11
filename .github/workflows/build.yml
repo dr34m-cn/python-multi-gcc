@@ -6,7 +6,6 @@ on:
     paths: [ 'Dockerfile', '.github/workflows/build.yml' ]
 
 env:
-  APP_NAME: demo
   DOCKER_USER: dr34m
   DOCKER_NAME: python-gcc6
 
