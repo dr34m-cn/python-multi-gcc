@@ -1,4 +1,4 @@
-name: 安装pip依赖
+name: 安装pip依赖-gcc6.3-next
 
 on:
   push:
