@@ -1,4 +1,4 @@
-name: 安装pip依赖-gcc6.3.
+name: 安装pip依赖-gcc6.3.-arm
 
 on:
   push:
@@ -12,7 +12,6 @@ env:
 jobs:
   build-docker:
     name: 构建Docker
-    runs-on: ubuntu-24.04-arm
     strategy:
       fail-fast: false
       matrix:
@@ -20,6 +19,7 @@ jobs:
           - linux/amd64
           - linux/arm64
           - linux/arm/v7
+    runs-on: ${{ startsWith(matrix.platform, 'linux/arm') ? 'ubuntu-24.04-arm' : 'ubuntu-24.04' }}
 
     steps:
       - name: 替换平台名称中的斜杠为横杠
