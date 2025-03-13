@@ -1,4 +1,4 @@
-name: 安装pip依赖-debian
+name: 安装pip依赖-debian.
 
 on:
   push:
