@@ -1,4 +1,4 @@
-name: 安装pip依赖-bookworm.
+name: 安装pip依赖-bookworm
 
 on:
   push:
