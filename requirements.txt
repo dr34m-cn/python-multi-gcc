@@ -15,4 +15,3 @@ onvif-zeep==0.2.12
 chardet==5.2.0
 staticx==0.14.1
 paramiko==3.4.1
-Pillow==11.2.1
