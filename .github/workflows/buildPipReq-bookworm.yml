@@ -3,11 +3,11 @@ name: 安装pip依赖-bookworm
 on:
   push:
     branches: [ 'main' ]
-    paths: [ 'requirements-bookworm.txt', '.github/workflows/buildPipReq-bookworm.yml' ]
+    paths: [ 'requirements.txt', '.github/workflows/buildPipReq-bookworm.yml' ]
 
 env:
   DOCKER_USER: dr34m
-  DOCKER_NAME: python-self
+  DOCKER_NAME: python-gcc12
 
 jobs:
   build-docker:
@@ -19,7 +19,6 @@ jobs:
         platform:
           - linux/amd64
           - linux/arm64
-          - linux/arm/v7
 
     steps:
       - name: 替换平台名称中的斜杠为横杠
@@ -85,4 +84,4 @@ jobs:
       - name: 创建清单并推送
         working-directory: /tmp/digests
         run: |
-          docker buildx imagetools create -t ${{ env.DOCKER_USER }}/${{ env.DOCKER_NAME }}:pip-req-bookworm $(printf '${{ env.DOCKER_USER }}/${{ env.DOCKER_NAME }}@sha256:%s ' *)
+          docker buildx imagetools create -t ${{ env.DOCKER_USER }}/${{ env.DOCKER_NAME }}:pip-req $(printf '${{ env.DOCKER_USER }}/${{ env.DOCKER_NAME }}@sha256:%s ' *)

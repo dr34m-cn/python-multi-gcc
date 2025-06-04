@@ -1,7 +1,6 @@
-FROM python:3.11.11-bookworm
-COPY requirements-bookworm.txt ./requirements.txt
-COPY packages/armv7-bookworm/ whl/
+FROM python:3.11-bookworm
+COPY requirements.txt ./requirements.txt
 RUN /bin/bash -c set -eux; \
     apt-get update; apt-get install -y --no-install-recommends patchelf; rm -rf /var/lib/apt/lists/*; \
-    pip install --find-links=whl scons==4.9.0; \
-    pip install --find-links=whl -r requirements.txt
+    pip install scons==4.9.0; \
+    pip install -r requirements.txt
