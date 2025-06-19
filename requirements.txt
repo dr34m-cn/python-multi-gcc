@@ -2,7 +2,7 @@ pyinstaller==6.12.0
 tornado==6.5
 configparser==7.1.0
 paho-mqtt==1.6.1
-requests==2.32.3
+requests==2.32.4
 WSDiscovery==2.0.0
 rtp==0.0.4
 APScheduler==3.10.4
