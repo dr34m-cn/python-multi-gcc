@@ -11,7 +11,7 @@ env:
 
 jobs:
   build-docker:
-    name: 构建Docker
+    name: 构建Docker.
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
