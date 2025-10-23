@@ -16,3 +16,4 @@ chardet==5.2.0
 staticx==0.14.1
 paramiko==3.4.1
 pillow==11.3.0
+openpyxl==3.1.5
