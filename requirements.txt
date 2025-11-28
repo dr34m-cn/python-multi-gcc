@@ -19,3 +19,4 @@ pillow==11.3.0
 openpyxl==3.1.5
 PyYAML==6.0.3
 pysmb==1.2.13
+scapy==2.6.1
