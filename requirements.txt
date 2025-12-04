@@ -21,3 +21,4 @@ PyYAML==6.0.3
 pysmb==1.2.13
 scapy==2.6.1
 impacket==0.13.0
+beautifulsoup4==4.14.3
