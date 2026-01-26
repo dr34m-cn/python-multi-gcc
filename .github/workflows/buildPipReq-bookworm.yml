@@ -3,7 +3,7 @@ name: 安装pip依赖-bookworm
 on:
   push:
     branches: [ 'main' ]
-    paths: [ 'requirements.txt', 'requirements-more.txt', '.github/workflows/buildPipReq-bookworm.yml' ]
+    paths: [ 'requirements.txt', 'requirements-more.txt', '.github/workflows/buildPipReq-bookworm.yml', 'pip-req-linux-bookworm.Dockerfile']
 
 env:
   DOCKER_USER: dr34m

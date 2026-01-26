@@ -3,7 +3,7 @@ name: 安装pip依赖-bullseye
 on:
   push:
     branches: [ 'main' ]
-    paths: [ 'requirements.txt', 'requirements-more.txt', '.github/workflows/buildPipReq-bullseye.yml' ]
+    paths: [ 'requirements.txt', 'requirements-more.txt', '.github/workflows/buildPipReq-bullseye.yml', 'pip-req-linux-bullseye.Dockerfile']
 
 env:
   DOCKER_USER: dr34m
