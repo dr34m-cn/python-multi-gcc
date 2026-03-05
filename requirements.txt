@@ -6,7 +6,7 @@ requests==2.32.5
 WSDiscovery==2.1.2
 rtp==0.0.4
 APScheduler==3.11.2
-psutil==5.9.8
+psutil==7.2.2
 xmltodict==0.13.0
 pyserial==3.5
 crcmod==1.7
