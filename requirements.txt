@@ -25,3 +25,4 @@ beautifulsoup4==4.14.3
 nuitka==4.0.7
 loguru==0.7.3
 mutagen==1.47.0
+zstandard==0.25.0
